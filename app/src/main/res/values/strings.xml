@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">CallGate</string>
+
+    <string name="call">Call</string>
+    <string name="open_gate">Open the gate</string>
+    <string name="et_gate_phone_number_hint">Gate phone number</string>
+    <string name="et_open_keyword_hint">Gate SMS Keyword</string>
+
+    <string name="tv_explanation_title">All set? Good job!!</string>
+    <string name="tv_explanation_content">Now, tell your visitors to send you an SMS with the keyword to open the gate when they arrive</string>
+
+    <string name="share_keyword_message_1">Hi, if you want to open my gate next time just send me an SMS with this keyword:</string>
+    <string name="share_keyword_message_2">and my gate will automatically open for you.</string>
+    <string name="btn_share_keyword_text">Send them a message</string>
+
+</resources>

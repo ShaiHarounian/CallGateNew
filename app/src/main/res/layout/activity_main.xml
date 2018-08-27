@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/gate_phone_number_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/open_keyword_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_pick_gate_phone_number"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_gate_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:inputType="number"
+            android:hint="@string/et_gate_phone_number_hint" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/btn_pick_gate_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@android:drawable/btn_default"
+        android:src="@drawable/ic_contacts_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gate_phone_number_layout"
+        app:layout_constraintLeft_toRightOf="@id/gate_phone_number_layout"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gate_phone_number_layout" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/open_keyword_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/line_center_horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gate_phone_number_layout">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_open_keyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:inputType="text"
+            android:digits="אבגדהוזחטיכךלמםנןסעפףצקרשתABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+            android:hint="@string/et_open_keyword_hint" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <View
+        android:id="@+id/line_center_horizontal"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tv_explanation_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/tv_explanation_title"
+        android:textSize="22sp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line_center_horizontal" />
+
+
+
+    <TextView
+        android:id="@+id/tv_explanation_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/tv_explanation_content"
+        android:layout_margin="16dp"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_explanation_title"/>
+
+
+    <Button
+        android:id="@+id/btn_send_keyword_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_share_keyword_text"
+        android:layout_margin="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_explanation_content"
+        />
+
+    <Button
+        android:id="@+id/btn_open_gate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/open_gate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+
+</android.support.constraint.ConstraintLayout>
